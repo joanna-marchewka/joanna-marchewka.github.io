@@ -29,12 +29,20 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+section{
+
+	margin-bottom:3em;
+}
+
 body {
 	line-height: 1;
 }
 
 ol, ul {
-	list-style: none;
+	list-style:none;
+	font-size:16pt;
+	word-spacing: 0.4em;
+	text-align:justify;
 }
 
 blockquote, q {
@@ -125,10 +133,10 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family:'Poppins';
 		font-size: 17pt;
-		font-weight: 300;
-		line-height: 1.65;
+		font-weight: 200;
+		line-height: 2,2;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -161,12 +169,12 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
 		transition: color 0.2s ease, border-bottom 0.2s ease;
 		text-decoration: none;
-		border-bottom: dotted 1px;
 		color: inherit;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
+			
 		}
 
 	strong, b {
@@ -198,6 +206,7 @@ input, select, textarea {
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
 		letter-spacing: -0.025em;
+		;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -213,6 +222,8 @@ input, select, textarea {
 	h2 {
 		font-size: 1.5em;
 	}
+
+	
 
 	h3 {
 		font-size: 1.25em;
@@ -1821,7 +1832,7 @@ input, select, textarea {
 		}
 
 	.box {
-		border-color: rgba(255, 255, 255, 0.35);
+		border-color:transparent
 	}
 
 /* Button */
@@ -2502,11 +2513,13 @@ input, select, textarea {
 		list-style: none;
 		margin-left: -1em;
 		padding-left: 0;
+		
 	}
 
 		ul.actions li {
 			padding: 0 0 0 1em;
 			vertical-align: middle;
+			
 		}
 
 		ul.actions.special {
@@ -2637,7 +2650,7 @@ input, select, textarea {
 	}
 
 	header.major {
-		margin-bottom: 3em;
+		margin-bottom: 2em;
 	}
 
 		header.major h2 {
@@ -2672,6 +2685,10 @@ input, select, textarea {
 				margin-right: auto;
 			}
 
+#header .rounded{
+	border-radius: 50%;
+	
+}
 	footer.major {
 		margin-top: 3em;
 	}
@@ -2996,6 +3013,20 @@ input, select, textarea {
 			.spotlight .content header.major {
 				margin: 0 0 2em 0;
 			}
+			.spotlight p{
+				font-size: 1.25em;
+				text-align: justify;
+				line-height: 140%;
+				
+
+
+			}
+			.spotlight p a{
+				font-weight: bolder;
+				color: rgb(54, 2, 85);
+			}
+
+			
 
 		.spotlight .image {
 			display: inline-block;
@@ -3081,7 +3112,7 @@ input, select, textarea {
 		}
 
 		#header p {
-			font-size: 1.25em;
+			font-size: 3em;
 			letter-spacing: -0.025em;
 		}
 
@@ -3233,7 +3264,7 @@ input, select, textarea {
 		}
 
 		#nav a:hover {
-			color: #636363;
+			color: #444444;
 		}
 
 		#nav strong, #nav b {
@@ -3264,7 +3295,9 @@ input, select, textarea {
 		#nav ul {
 			margin: 0;
 			padding: 0;
+			text-align: center;
 			list-style: none;
+			font-size:28px;
 		}
 
 			#nav ul li {
@@ -3336,7 +3369,8 @@ input, select, textarea {
 	#main {
 		background-color: #ffffff;
 		color: #636363;
-		border-radius: 0.25em;
+		border-radius: 1em;
+		padding-bottom:10em;
 	}
 
 		#main input, #main select, #main textarea {
@@ -3379,7 +3413,7 @@ input, select, textarea {
 		#main .button {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 1px #dddddd;
-			color: #636363 !important;
+			color: #39203a !important;
 		}
 
 			#main input[type="submit"]:hover,
@@ -3387,7 +3421,8 @@ input, select, textarea {
 			#main input[type="button"]:hover,
 			#main button:hover,
 			#main .button:hover {
-				background-color: rgba(222, 222, 222, 0.25);
+				color:#fff !important;
+				background-color: rgba(86, 26, 88, 0.603);
 			}
 
 			#main input[type="submit"]:active,
@@ -3463,7 +3498,7 @@ input, select, textarea {
 			}
 
 		#main select {
-			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23dddddd' /%3E%3C/svg%3E");
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='60' preserveAspectRatio='none' viewBox='0 0 60'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23dddddd' /%3E%3C/svg%3E");
 		}
 
 			#main select option {
@@ -3582,7 +3617,7 @@ input, select, textarea {
 
 		#main > .main {
 			padding: 5em 5em 3em 5em ;
-			border-top: solid 1px #dddddd;
+			border-top: solid 0px #dddddd;
 		}
 
 			#main > .main:first-child {
@@ -3609,6 +3644,7 @@ input, select, textarea {
 
 			#main > .main {
 				padding: 4em 4em 2em 4em ;
+				margin-bottom:
 			}
 
 				#main > .main > .image.main:first-child {
@@ -3677,6 +3713,13 @@ input, select, textarea {
 							border-radius: 0;
 						}
 
+		
+		
+		
+		
+
+		 
+			
 		}
 
 /* Footer */
@@ -3690,14 +3733,16 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		padding: 5em 5em 3em 5em ;
+		padding: 5em 5em 1em 3em ;
 		width: calc(100% + 2em);
-		margin: 0 0 3em -2em;
+		margin: 5em 0 3em -1em;
+		background-color: rgba(255, 255, 255, 0.089);
+		border-radius:2em;
 	}
 
 		#footer > * {
 			width: calc(50% - 2em);
-			margin-left: 2em;
+			
 		}
 
 		#footer .copyright {
@@ -3783,3 +3828,249 @@ input, select, textarea {
 			}
 
 		}
+
+/* Moje Modyfikacje */
+#first, #third{
+	background-color:rgba(230, 230, 250, 0.521);
+}
+
+
+#first ul{
+	
+	text-align: left;
+	font-size: 26px;
+	line-height: 1.6em;
+}
+
+#second{
+	background-color: none; 
+}
+
+#second .major{
+	
+}
+#second .block{ 
+	margin-top: 30px;
+    float:left;
+    width:33.3%;
+    border:none;
+    padding:15px;
+	box-sizing:border-box;
+	text-align:center;
+	
+	
+}
+
+#second ul{
+	list-style-type:none;
+	list-style-position:outside;
+}
+
+#second .block .tytuly{
+	font-size: 32px;
+	padding-bottom: 2px;
+	border-color: rgb(255, 240, 250);
+}
+
+#second .block h3{
+
+	padding-top: 40px;
+	padding-bottom:40px;
+	font-size: 24px;
+	background-color:none;
+	border-radius:1em;
+	
+	
+}
+#second .block a{
+
+font-weight: bold;
+color:rgb(96, 45, 117);
+background-color:#fff;
+
+
+}
+#second a:hover{
+	color:#fff;
+	background-color: rgb(96, 45, 117);
+}
+
+#second a :active{
+	background-color:rgb(78, 12, 28);
+	
+
+
+}
+
+#second .amazing, .grafik, .nieobce{
+	
+	
+	
+	line-height: 24px;
+	font-size: 22px;
+	text-align:center;
+	word-wrap: suppress 6px;
+	
+	word-wrap:break-word;
+	white-space:pre-line;
+	
+	
+
+	
+
+
+	
+
+}
+
+#second .grafik{
+
+	padding-top:40px;
+	
+}
+
+#second .nieobce{
+	padding-right:0.7em;
+}
+
+
+	
+
+#third .skills{
+
+	background:none;
+	border-radius:3em;
+	padding:0;
+	
+}
+#third .skills-container ul{
+	list-style-type: none;
+}
+
+
+#third .skills-container ul li{
+
+background:white;
+padding:2em;
+border-radius:1em;
+margin-bottom:1em;
+
+
+
+}
+#second .main, .block{ 
+
+	background-color:rgba(230, 230, 250, 0.521);
+	height:100%;
+	margin-bottom:  3em;
+	padding-bottom: 10em;
+	text-align:center ;
+	border-radius: 1.5em;
+	
+
+}
+
+#second .main, .wrapper{
+
+	width:1240px;
+	height:880px;
+	justify-content: center;
+	text-align:center;
+	
+}
+#second{
+	height:1300px;
+}
+#third{
+	height:1520px;
+}
+
+	
+}
+
+#third .skill-container{
+	height:100px;
+	display:grid;
+	place-content:center;
+	margin: 0 auto;
+	text-align: center;
+
+
+}
+
+#third .icon-container{
+	display:none;
+}
+
+
+.skill-title{
+	font-weight:bold;
+	text-align: center;
+	font-size:26px;
+
+}
+.skills, .featured-skill{
+	
+	margin-bottom: 2em;
+	word-spacing:normal;
+	text-align: center;
+	text-transform:none;
+	text-align-last: center;
+	line-height: 1em;
+	font-size: larger;
+
+	
+}
+	
+.programy_graficzne{
+text-align-last: center;
+padding-bottom:2em;
+}
+
+.ps {
+	text-align: center;
+	text-transform: capitalize;
+	
+	
+}
+
+
+.programy {
+	text-align: center;
+
+
+	
+	
+}
+
+#footer .kontakt{
+
+	padding-left:70px;
+}
+ @media only screen and (min-width: 950px) {
+
+	#third .skills{
+		margin-top: -5em;
+		margin-bottom: -7em;
+		padding-top: 7em;
+	}
+	
+	#third .skills-container ul{
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		grid-gap: 1em;
+
+
+	}
+ }
+
+ @media only sceen and (min-width: 1682px){
+	#second .main, .wrapper{
+		margin:-5em;
+		padding: -5em
+	}
+
+ }
+
+
+	

@@ -4240,6 +4240,23 @@ padding-bottom:2em;
 	
 }
 
+@media screen and (max-width: 620px){
+
+	#second .amazing, .grafik, .nieobce{
+	
+	
+	
+		margin:0;
+		padding:0;
+		text-align: center;
+		
+	}
+	
+	
+}
+
+
+
 @media screen and (max-width: 890px){
 
 	#second .main, .block{
@@ -4259,6 +4276,36 @@ padding-bottom:2em;
 		
 	}
 
+}
+
+
+
+@media screen and (max-width: 620px){
+
+	 #main{
+		
+		padding-bottom:0;
+	}
+
+
+
+
+@media screen and (max-width: 620px){
+
+
+	p{
+		font-size: 14px;
+		line-height: .9rem;
+		word-spacing: normal;
+	}
+	
+}
+
+@media screen and (max-width: 620px){
+
+	#intro p {
+		font-size:1rem;
+	}
 }
 
 .spoleczne-szybko{
